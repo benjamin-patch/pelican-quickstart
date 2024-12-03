@@ -35,4 +35,4 @@ DEFAULT_PAGINATION = 5
 RELATIVE_URLS = True
 
 # Theme
-THEME = 'themes/simple'
+THEME = 'themes/basic'
