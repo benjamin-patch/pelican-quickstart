@@ -36,3 +36,4 @@ RELATIVE_URLS = True
 
 # Theme
 THEME = 'themes/bootstrap'
+STYLESHEET_URL = './theme/css/bootstrap.css'
