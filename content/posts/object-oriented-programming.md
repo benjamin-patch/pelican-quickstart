@@ -1,6 +1,8 @@
 Title: Object-Oriented Programming
 Date: 2024-12-02 12:00
-Category: Python
+Category: Programming
+Tags: pelican, python, design
+Summary: Short version for index and feeds.
 
 Let's discuss the basics of OOP. Unlike other programming languages, consectetur adipiscing elit.
 
