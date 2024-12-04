@@ -42,18 +42,18 @@
   <body class="container">
     <header>
       <hgroup><h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}</hgroup>
-      <nav><ul>
+      <nav><ul class="nav nav-underline nav-justified">
         {% for title, link in MENUITEMS %}
-          <li><a href="{{ link }}">{{ title }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
         {% if DISPLAY_PAGES_ON_MENU %}
           {% for p in pages %}
-            <li><a href="{{ SITEURL }}/{{ p.url }}" {% if p==page %} aria-current="page" {% endif %}>{{ p.title }}</a></li>
+            <li class="nav-item"><a href="{{ SITEURL }}/{{ p.url }}" {% if p==page %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>{{ p.title }}</a></li>
           {% endfor %}
         {% endif %}
         {% if DISPLAY_CATEGORIES_ON_MENU %}
           {% for cat, null in categories %}
-            <li><a href="{{ SITEURL }}/{{ cat.url }}" {% if cat==category %} aria-current="page" {% endif %}>{{ cat}}</a></li>
+            <li class="nav-item"><a href="{{ SITEURL }}/{{ cat.url }}" {% if cat==category %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>{{ cat}}</a></li>
           {% endfor %}
         {% endif %}
       </ul></nav>
