@@ -12,6 +12,9 @@
       {% if STYLESHEET_URL %}
         <link rel="stylesheet" type="text/css" href="{{ STYLESHEET_URL }}" />
       {% endif %}
+      {% if ICON_STYLESHEET_URL %}
+        <link rel="stylesheet" type="text/css" href="{{ ICON_STYLESHEET_URL }}" />
+      {% endif %}
       {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME|striptags }} Full Atom Feed" />
       {% endif %}
@@ -63,10 +66,16 @@
       {% endblock %}
     </main>
     <footer class="text-center p-3 m-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-top-3">
-      <address>
-        Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
-        which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-      </address>
+      <p>
+        Powered by <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          rel="noopener noreferrer" href="https://getpelican.com/">Pelican <i class="bi bi-box-arrow-up-right"></i></a>
+        and <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          rel="noopener noreferrer" href="https://getbootstrap.com/">Bootstrap <i class="bi bi-box-arrow-up-right"></i></a>
+      </p>
+      </a>
+      <p>
+        Designed and Coded by Benjamin Patch
+      </p>
       <p>
         © {{ NOW|strftime("%Y") }} {{ SITENAME }}
       </p>

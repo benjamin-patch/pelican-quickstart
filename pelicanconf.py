@@ -56,6 +56,7 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 # Theme
 THEME = 'themes/bootstrap'
 STYLESHEET_URL = '/theme/css/bootstrap.min.css'
+ICON_STYLESHEET_URL = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css'
 
 # Define now() variable to print current year
 from datetime import datetime
