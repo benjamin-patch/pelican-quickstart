@@ -1,5 +1,6 @@
 AUTHOR = 'Benjamin Patch'
 SITENAME = 'Pelican Quickstart'
+SITESUBTITLE = 'A Personal Blog'
 SITEURL = ""
 
 PATH = "content"
