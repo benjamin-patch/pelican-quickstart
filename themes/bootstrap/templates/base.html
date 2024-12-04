@@ -41,7 +41,7 @@
 
   <body class="container">
     <header>
-      <hgroup><h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}</hgroup>
+      <hgroup class="text-center"><h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}</hgroup>
       <nav><ul class="nav nav-underline nav-justified">
         {% for title, link in MENUITEMS %}
           <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
@@ -62,11 +62,14 @@
       {% block content %}
       {% endblock %}
     </main>
-    <footer>
+    <footer class="text-center">
       <address>
         Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
         which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
       </address>
+      <p>
+        © {{ NOW|strftime("%Y") }} {{ SITENAME }}
+      </p>
     </footer>
   </body>
 </html>

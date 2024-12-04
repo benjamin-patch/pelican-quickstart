@@ -56,3 +56,7 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 # Theme
 THEME = 'themes/bootstrap'
 STYLESHEET_URL = '/theme/css/bootstrap.min.css'
+
+# Define now() variable to print current year
+from datetime import datetime
+NOW = datetime.now()
