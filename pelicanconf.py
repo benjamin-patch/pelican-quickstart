@@ -62,3 +62,20 @@ ICON_STYLESHEET_URL = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/
 # Define now() variable to print current year
 from datetime import datetime
 NOW = datetime.now()
+
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 1.0,
+        "indexes": 0.5,
+        "pages": 0.3
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    },
+    "exclude": [
+        r"\.html$", # ends with ".html"
+    ],
+}
