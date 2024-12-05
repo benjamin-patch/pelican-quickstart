@@ -1,5 +1,8 @@
-import os
+# Required imports
 from datetime import datetime
+
+# Define now() variable to print current year
+NOW = datetime.now()
 
 AUTHOR = 'Benjamin Patch'
 SITENAME = 'Pelican Quickstart'
@@ -62,9 +65,6 @@ THEME = 'themes/bootstrap'
 STYLESHEET_URL = '/theme/css/bootstrap.min.css'
 ICON_STYLESHEET_URL = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css'
 
-# Define now() variable to print current year
-NOW = datetime.now()
-
 SITEMAP = {
     "format": "xml",
     "priorities": {
@@ -82,20 +82,10 @@ SITEMAP = {
     ],
 }
 
-# Copy files into the root of the output directory
+# Copy files into the root of 'output' directory
 STATIC_PATHS = ['images', 'extra']
-EXTRA_PATH_METADATA = {}
-
-content_path = os.path.join(os.path.dirname(__file__), 'content')
-
-for root, dirs, files in os.walk(os.path.join(content_path, 'extra')):
-    for file in files:
-        filepath = os.path.join(root, file)
-        relpath = os.path.relpath(filepath, content_path)
-        EXTRA_PATH_METADATA[relpath] = {'path': file}
-
-for root, dirs, files in os.walk(os.path.join(content_path, 'images')):
-    for file in files:
-        filepath = os.path.join(root, file)
-        relpath = os.path.relpath(filepath, content_path)
-        EXTRA_PATH_METADATA[relpath] = {'path': os.path.join('images', file)}
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/humans.txt': {'path': 'humans.txt'},
+}
