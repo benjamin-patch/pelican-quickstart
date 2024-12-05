@@ -6,28 +6,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/author/benjamin-patch/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/category/programming/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/category/review/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -55,28 +55,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tag/design/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/hardware/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/pelican/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/python/</loc>
-<lastmod>2024-12-04T17:33:46-00:00</lastmod>
+<lastmod>2024-12-04T17:40:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
